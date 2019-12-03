@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Newlan</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://newlan.fun/"/>
+  <updated>2019-12-03T14:46:05.990Z</updated>
+  <id>http://newlan.fun/</id>
+  
+  <author>
+    <name>Newtorn</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://newlan.fun/2019/12/03/hello-world/"/>
+    <id>http://newlan.fun/2019/12/03/hello-world/</id>
+    <published>2019-12-03T14:46:05.990Z</published>
+    <updated>2019-12-03T14:46:05.990Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
