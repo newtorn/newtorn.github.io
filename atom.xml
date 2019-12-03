@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Newlan</title>
+  <title>Newtorn</title>
   
-  
+  <subtitle>累就对了,舒服是留给死人的</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://newtorn.gitee.io/"/>
