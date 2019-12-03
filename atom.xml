@@ -5,9 +5,9 @@
   
   <link href="/blog/atom.xml" rel="self"/>
   
-  <link href="https://newtorn.gitee.io/blog/"/>
+  <link href="https://newtorn.gitee.io/"/>
   <updated>2019-12-03T14:46:05.990Z</updated>
-  <id>https://newtorn.gitee.io/blog/</id>
+  <id>https://newtorn.gitee.io/</id>
   
   <author>
     <name>Newtorn</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="https://newtorn.gitee.io/blog/2019/12/03/hello-world/"/>
-    <id>https://newtorn.gitee.io/blog/2019/12/03/hello-world/</id>
+    <link href="https://newtorn.gitee.io/2019/12/03/hello-world/"/>
+    <id>https://newtorn.gitee.io/2019/12/03/hello-world/</id>
     <published>2019-12-03T14:46:05.990Z</published>
     <updated>2019-12-03T14:46:05.990Z</updated>
     
