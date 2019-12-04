@@ -1,0 +1,34 @@
+<% if (theme.giteement && theme.giteement.remote){ %>
+    <link rel="stylesheet" href="https://giteement.oss-cn-beijing.aliyuncs.com/default.css">
+    <script src="https://giteement.oss-cn-beijing.aliyuncs.com/giteement.browser.js"></script>
+<% } else { %>
+    <link rel="stylesheet" href="/libs/giteement/giteement-default.css">
+    <link rel="stylesheet" href="/css/giteement.css"></link>
+    <script src="/libs/giteement/giteement.browser.js"></script>
+<% } %>
+
+<% if (theme.giteement && theme.giteement.enable){ %>
+<div class="gitment-card card" data-aos="fade-up">
+    <div class="comment_headling" style="font-size: 20px; font-weight: 700; position: relative; left: 20px; top: 15px; padding-bottom: 5px;">
+        <i class="fas fa-comments fa-fw" aria-hidden="true"></i>
+        <span>评论</span>
+    </div>
+    <div id="gitment-content" class="card-content"></div>
+</div>
+
+<script>
+<!-- id: "<%= page.title %>" -->
+var giteement = new Giteement({
+    id: '<%= page.date.format('YYYYMMDDHHmmss') %>',
+    owner: '<%= theme.giteement.giteeID %>',
+    repo: '<%= theme.giteement.repo %>',
+    backcall_uri: '<%= theme.giteement.redirect_uri %>',
+    oauth_uri: '<%= theme.giteement.oauth_uri %>',
+    oauth: {
+        client_id: '<%= theme.giteement.gitment_oauth.client_id%> ',
+        client_secret: '<%= theme.giteement.gitment_oauth.client_secret %>',
+    },
+})
+giteement.render('gitment-content')
+</script>
+<% } %>
