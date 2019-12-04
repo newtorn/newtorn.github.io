@@ -291,7 +291,7 @@
         <div class="brand">
             <div class="title center-align">
                 
-                累就对了,舒服是留给死人的
+                累就对了,舒服是给死人的
                 
             </div>
 
@@ -439,14 +439,84 @@
     
     <div class="row">
         <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
-            梦想Google, Apple, Amazon, Alibaba, Netease, ByteDance, Tencent, JD, 英伟达，SuNing, Microsoft, Sony, etc.
+            Google, Apple, Amazon, Alibaba, Netease, ByteDance, Tencent, JD, 英伟达，SuNing, Microsoft, Sony, etc.
         </div>
     </div>
 </div>
                     
 
                     
+                        
 
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-music"></i>&nbsp;&nbsp;倾听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'false' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '',
+        audio: eval([{"name":"You Need To Calm Down","artist":"Taylor Swift","url":"https://dl.stream.qqmusic.qq.com/M500002YPyFT0CZYfe.mp3?guid=843980105&vkey=22A2AB85529872F008364A3B8DD6DE3EDE37C9E1303A98B76349219BF82CFEDBE9D4702E3729A647846D92DD8E5422CBEB0A985361F38352&uin=0&fromtag=66","cover":"https://y.gtimg.cn/music/photo_new/T002R300x300M000001kxYQW0yIa2p.jpg?max_age=2592000"},{"name":"Faded","artist":"Alan Walker / Iselin Solheim","url":"https://dl.stream.qqmusic.qq.com/M500002GPT5r262kk1.mp3?guid=286488734&vkey=46C180CA08F29BF436E5FEB6A4BA227FA37921D0D69AF12D680E0FFF2EE043A758BC84D3CCBEB7768725DF912F354D5FA21359BB9F38760F&uin=0&fromtag=66","cover":"https://y.gtimg.cn/music/photo_new/T002R300x300M000002Nt51E0q8Zoo.jpg?max_age=2592000"},{"name":"Take me hand","artist":"DAISHI DANCE,Cecile Corbel","url":"https://dl.stream.qqmusic.qq.com/M800000Bxj2q4DFbmw.mp3?guid=1291675111&vkey=21276CAAA479EEF80B37979F27FE2D4EC1019BE84BCACBB8BB7E0F9983B0FACD5E89CDD548338A77E0B59AC229A8A86429F5275912F9E46A&uin=0&fromtag=66","cover":"https://y.gtimg.cn/music/photo_new/T002R300x300M000003syeGG46ZNlF.jpg?max_age=2592000"}])
+    });
+});
+</script>
+                    
+
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: 'http://fs.mv.web.kugou.com/201912041356/355febf61a28301d25bce49e42dc3d4d/G160/M0A/11/13/gJQEAFzCgHeAUdYbATAI4cdIwR4575.mp4',
+                pic: 'https://p3fx.kgimg.com/mvpic/a0/06/a006546c2ff4cf48df30903f229e9e4b.jpg',
+                thumbnails: ''
+            }
+        });
+    });
+</script>
                     
 
                     
@@ -520,26 +590,6 @@
             Copyright&nbsp;&copy;
             <span id="year">年份</span>
             <a href="https://newtorn.gitee.io" target="_blank">Newtorn</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
-            <br>
-            
-            
-            
-            
-            
-            
-            <span id="busuanzi_container_site_pv">
-                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
-                    class="white-color"></span>&nbsp;次
-            </span>
-            
-            
-            <span id="busuanzi_container_site_uv">
-                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
-                    class="white-color"></span>&nbsp;人
-            </span>
-            
             <br>
             
             <span id="sitetime">载入运行时间...</span>
@@ -586,6 +636,26 @@
                 }
                 setInterval(siteTime, 1000);
             </script>
+            
+            <!--|&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a> -->
+            <br>
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                <!--|-->&nbsp;&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                <!--|-->&nbsp;&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
             
             <br>
             
@@ -713,6 +783,6 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
 
-</body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"log":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"react":{"opacity":0.7}});</script></body>
 
 </html>
