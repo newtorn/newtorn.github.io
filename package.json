@@ -31,6 +31,7 @@
     "hexo-renderer-stylus": "^1.1.0",
     "hexo-server": "^1.0.0",
     "hexo-wordcount": "^6.0.1",
+    "image-size": "^0.8.3",
     "live2d-widget-model-shizuku": "^1.0.5"
   }
 }
