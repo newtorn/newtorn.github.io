@@ -1,5 +1,3 @@
-#!/Users/newtorn/.pyenv/shims/python3
-
 STYPES = ('kugou', 'netease', 'qq', 'kuwo', 'xiami', 'baidu', '1ting', 'migu', 'lizhi', 'qingting', 'ximalaya', 'kg', '5singyc', '5singfc')
 SFILTERS = ('name', 'id', 'url')
 
