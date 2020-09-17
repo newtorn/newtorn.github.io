@@ -67,7 +67,7 @@ dream:
   enable: true
   showTitle: true
   title: 我的梦想
-  text: Google, Apple, Amazon, Alibaba, Netease, ByteDance, Tencent, JD, 英伟达，SuNing, Microsoft, Sony, etc.
+  text: ByteDance, Google, Apple, Amazon, Alibaba, Netease, Tencent, JD, 英伟达，SuNing, Microsoft, Sony, etc.
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
