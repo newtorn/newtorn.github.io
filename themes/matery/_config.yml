@@ -91,8 +91,8 @@ video:
   enable: true
   showTitle: true
   title: 精彩视频
-  url: medias/video/TaylorSwift-Me.mp4 # http://fs.mv.web.kugou.com/201912041356/355febf61a28301d25bce49e42dc3d4d/G160/M0A/11/13/gJQEAFzCgHeAUdYbATAI4cdIwR4575.mp4 # 必填
-  pic: /medias/video/TaylorSwift-Me.jpg # https://p3fx.kgimg.com/mvpic/a0/06/a006546c2ff4cf48df30903f229e9e4b.jpg
+  url: https://newtorn-blog.oss-cn-beijing.aliyuncs.com/TaylorSwift-Me.mp4
+  pic: https://newtorn-blog.oss-cn-beijing.aliyuncs.com/TaylorSwift-Me.jpg
   thumbnails:
   height: # 如：400
   autoplay: false # 是否自动播放
