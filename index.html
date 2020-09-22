@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="galleries, Newtorn">
-    <meta name="description" content="galleries | Newtorn">
+    <meta name="keywords" content="Newtorn">
+    <meta name="description" content="Newtorn">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>galleries | Newtorn</title>
+    <title>Newtorn</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -345,330 +345,357 @@
 
 </header>
 
-    <style type="text/css">
-    /* don't remove. */
-    .about-cover {
-        height: 75vh;
+    
+<style>
+    .carousel-control {
+        width: 45px;
+        height: 45px;
+        line-height: 55px;
+        border-radius: 45px;
+        background: transparent;
+        cursor: pointer;
+        z-index: 100;
+    }
+
+    #prev-cover {
+        position: absolute;
+        top: 48%;
+        left: 8px;
+    }
+
+    #next-cover {
+        position: absolute;
+        top: 48%;
+        right: 8px;;
+    }
+
+    #prev-cover i {
+        margin-right: 3px;
+    }
+
+    #next-cover i {
+        margin-left: 3px;
+    }
+
+    .carousel-control:hover {
+        background-color:rgba(0, 0, 0, .4);
+    }
+
+    .carousel-control i {
+        color: #fff;
+        font-size: 2.4rem;
     }
 </style>
 
-<style type="text/css">
-    .main-inner{
-        width: 100%;
-    }
-    .main {
-    padding-bottom: 150px;
-    margin-top: 0px;
-    background: #121212;
-    }
-    .main-inner{
-        margin-top: unset;
-    }
-    .page-post-detail .post-meta{
-        display: none;
-    }
-    body {
-        background-image: unset;
-        background-attachment: unset;
-        background-size: 100%;
-        /*background-position: top left;*/
-    }
-    .header{
-        background: rgba(28, 25, 25, 0.6);
-        border-bottom: unset;
-    }
-    .menu .menu-item a{
-            font-weight: 300;
-            color: #e6eaed;
-    }
-
-    .imgbox{
-     width: 100%;
-     overflow: hidden;
-     height: 250px;
-     border-right: 1px solid #bcbcbc;
-    }
-    .box{
-        visibility: visible;
-        overflow: auto;
-        zoom: 1;
-    }
-    .box li{
-    float: left;
-    width: 25%;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    /*display: inline;*/
-    padding: 0;
-    height: 360px;
-    }
-    .box li span{
-    display: block;
-    padding: 4% 7% 10% 7%;
-    min-height: 80px;
-    background: #fff;
-    color: #fff;
-    font-size: 16px;
-    background: #121212;
-    font-weight: 600;
-    line-height: 26px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-
-    img.imgitem{
-        padding: unset;
-        padding: unset;
-        border: unset;
-        position: relative;
-        padding: 0px;
-        height: auto;
-        width: 100%;
-    }
 
 
-div#posts.posts-expand {
-    border: unset;
-    padding: unset;
-    margin-bottom: 10px;
-}
-.posts-expand .post-body img{
-    padding: 0px !important;
-}
-.box p{
-    display: block;
-    background: #121212;
-    color: #fff;
-    font-size: 12px;
-    font-family: 'SwisMedium';
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-}
+<div class="carousel carousel-slider center index-cover" data-indicators="true" style="margin-top: -64px;">
+    
 
-.box span strong{
-    background: rgba(0,0,0,0.4);
-    padding: 20px;
-}
+    <div class="carousel-item red white-text bg-cover about-cover">
+        <div class="container">
+            <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                累就对了,舒服是给死人的
+                
+            </div>
 
-.posts-expand .post-title {
-    display: none;
-}
-.title{
-    display: inline-block;
-    vertical-align: middle;
-    background: url(https://image.idealli.com/bg11.jpg);
-    font: 85px/250px 'ChaletComprimeMilanSixty';
-    background-position: left bottom !important;
-    color: #fff;
-    background-size: 100% auto !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    text-align: center;
-    border: unset;
-    height: 700px;
-    cursor: unset !important;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.btn-more-posts{
-    display: inline-block;
-    vertical-align: middle;
-    font: 85px/250px 'ChaletComprimeMilanSixty';
-    color: #000;
-    width: 100%;
-    text-align: center;
-    border: unset;
-    height: 400px;
-    background-color: #121212;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-@media (max-width: 767px){
-    .box li {
-    width: 100%;
-}
-.title {
-    height: 200px;
-}
-
-.box span {
-    min-height: 80px;
-    border-right: unset;
-    font-size: 17px;
-}
-.box p{
-    border-right: unset;
-    font-size: 12px;
-
-}
-.posts-expand {
-    margin: unset;
-}
-    div#comments.comments.v {
-    width: 96%;
-    padding-top: 50px;
-}
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['一个致力于开源的男人','A man who is dictated to open source'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
 
-}
-
-@media (min-width: 1600px){
-    .container .main-inner{
-        width: 100%;
-    }
-}
-
-.footer{
-    background-color: #121212 !important;
-}
-.v * {
-    color: #f4f4f4 !important;
-}
-
-.v .vwrap .vmark .valert .vcode {
-    background: #00050b !important;
-}
-
-</style>
-
-<div id="box" class="box"></div>
-
-
-<script type="text/javascript">
-
-function loadXMLDoc(xmlUrl)
-{
-    try //Internet Explorer
-    {
-        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
-    }
-    catch(e)
-    {
-      try //Firefox, Mozilla, Opera, etc.
-        {
-          xmlDoc=document.implementation.createDocument("","",null);
-        }
-      catch(e) {alert(e.message)}
-    }
-
-    try
-    {
-          xmlDoc.async=false;
-          xmlDoc.load(xmlUrl);
-    }
-    catch(e) {
-        try //Google Chrome
-          {
-            var chromeXml = new XMLHttpRequest();
-            chromeXml.open("GET", xmlUrl, false);
-            chromeXml.send(null);
-            xmlDoc = chromeXml.responseXML.documentElement;
-            //alert(xmlDoc.childNodes[0].nodeName);
-            //return xmlDoc;
-          }
-          catch(e)
-          {
-              alert(e.message)
-          }
-    }
-    return xmlDoc;
-}
-
-var xmllink = "https://blog-album-1252449298.cos.ap-shanghai.myqcloud.com/";  // 你的访问域名链接
-// 访问域名链接就是我上面提到的那个访问域名xml链接
-
-xmlDoc=loadXMLDoc(xmllink);
-var urls=xmlDoc.getElementsByTagName('Key');
-var date=xmlDoc.getElementsByTagName('LastModified');
-var wid=250;
-var showNum=12; //每个相册一次展示多少照片
-if ((window.innerWidth)>1200) {wid=(window.innerWidth*3)/18;}
-var box=document.getElementById('box');
-var i=0;
-
-var content=new Array();
-var tmp=0;
-var kkk=-1;
-for (var t = 0; t < urls.length ; t++) {
-    var bucket=urls[t].innerHTML;
-    var length=bucket.indexOf('/');
-    if(length===bucket.length-1){
-        kkk++;
-        content[kkk]=new Array();
-        content[kkk][0]={'url':bucket,'date':date[t].innerHTML.substring(0,10)};
-        tmp=1;
-    }
-    else {
-        content[kkk][tmp++]={'url':bucket.substring(length+1),'date':date[t].innerHTML.substring(0,10)};
-    }
-}
-
-for (var i = 0; i < content.length; i++) {
-    var conBox=document.createElement("div");
-    conBox.id='conBox'+i;
-    box.appendChild(conBox);
-    var item=document.createElement("div");
-    var title=content[i][0].url;
-    item.innerHTML="<button class=title style=background:url("+xmllink+'/'+title+"main-panel.jpg"+");><span style=display:inline;><strong style=color:#f0f3f6; >"+title.substring(0,title.length-1)+"</strong></span></button>";
-    conBox.appendChild(item);
-
-    for (var j = 1; j < content[i].length && j < showNum+1; j++) {
-        var con=content[i][j].url;
-        var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src="+xmllink+'/'+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4)+"</span><p>上传于"+content[i][j].date+"</p>";
-        conBox.appendChild(item);
-    }
-    if(content[i].length > showNum){
-        var moreItem=document.createElement("button");
-        moreItem.className="btn-more-posts";
-        moreItem.id="more"+i;
-        moreItem.value=showNum+1;
-        let cur=i;
-        moreItem.onclick= function (){
-            moreClick(this,cur,content[cur],content[cur][0].url);
-        }
-        moreItem.innerHTML="<span style=display:inline;><strong style=color:#f0f3f6;>加载更多</strong></span>";
-        conBox.appendChild(moreItem);
-    }
-}
-
-function moreClick(obj,cur,cont,title){
-    var parent=obj.parentNode;
-    parent.removeChild(obj);
-    var j=obj.value;
-    var begin=j;
-    for ( ; j < cont.length && j < Number(showNum) + Number(begin); j++) {
-        console.log( Number(showNum) + Number(begin));
-        var con=cont[j].url;
-        var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src="+xmllink+'/'+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4)+"</span><p>上传于"+cont[j].date+"</p>";
-        parent.appendChild(item);
-    }
-    if(cont.length > j){
-        obj.value=j;
-        parent.appendChild(obj);
-    }
-}
-
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
+
+
+
+            <div class="cover-btns">
+                <a href="#indexCard" class="waves-effect waves-light btn">
+                    <i class="fa fa-angle-double-down"></i>开始阅读
+                </a>
+
+                
+                    <a href="https://github.com/newtorn/" class="waves-effect waves-light btn" target="_blank">
+                        <i class="fab fa-github-alt"></i>Github
+                    </a>
+                
+            </div>
+            <div class="cover-social-link">
+    <a href="https://github.com/newtorn" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:codertorn@gmail.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=447231743" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 447231743" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="https://weibo.com/u/2022016627" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/u/2022016627" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
+
+
+
+    <a href="https://www.zhihu.com/people/newtorn" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/newtorn" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+        </div>
+    </div>
+
+    
+</div>
 
 <script>
     $(function () {
-        let animateClass = 'animated pulse';
-        $('.imgbox').hover(function () {
-            $(this).addClass(animateClass);
-        }, function () {
-            $(this).removeClass(animateClass);
+        let coverSlider = $('.carousel');
+        coverSlider.carousel({
+            duration: Number('120'),
+            fullWidth: true,
+            indicators: 'true' === 'true'
+        });
+
+        let carouselIntervalId;
+        
+        // Loop to call the next cover article picture.
+        let autoCarousel = function() {
+            carouselIntervalId = setInterval(function () {
+                coverSlider.carousel('next');
+            }, 5000);
+        };
+        autoCarousel();
+        
+
+        let restartPlay = function () {
+            
+            clearInterval(carouselIntervalId);
+            autoCarousel();
+            
+        };
+
+        
+        // prev and next cover post.
+        $('#prev-cover').click(function () {
+            coverSlider.carousel('prev');
+            restartPlay();
+        });
+        $('#next-cover').click(function () {
+            coverSlider.carousel('next');
+            restartPlay();
+        });
+        
+    });
+</script>
+
+
+
+<main class="content">
+
+    
+    <div id="indexCard" class="index-card">
+        <div class="container ">
+            <div class="card">
+                <div class="card-content">
+                    
+                        <div class="dream">
+    
+    <div class="title center-align">
+        <i class="far fa-lightbulb"></i>&nbsp;&nbsp;我的梦想
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s10 offset-s1 center-align text">
+            ByteDance, Google, Apple, Amazon, Alibaba, Netease, Tencent, JD, 英伟达，SuNing, Microsoft, Sony, etc.
+        </div>
+    </div>
+</div>
+                    
+
+                    
+                        
+
+<link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<div class="music-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-music"></i>&nbsp;&nbsp;倾听音乐
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="aplayer" class="music"></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script>
+$(function () {
+    new APlayer({
+        container: document.getElementById('aplayer'),
+        fixed: 'false' === 'true',
+        autoplay: 'false' === 'true',
+        theme: '#42b983',
+        loop: 'all',
+        order: 'list',
+        preload: 'auto',
+        volume: Number('0.7'),
+        listFolded: 'false' === 'true',
+        listMaxHeight: '',
+        audio: eval([{"name":"You Need To Calm Down","artist":"Taylor Swift","url":"https://sharefs.yun.kugou.com/202009221357/95a2bade470bb54543ac6a60d921d720/G218/M02/06/19/upQEAF7B8R2AYY8QADHPUCEdu9E292.mp3","cover":"http://imge.kugou.com/stdmusic/150/20200518/20200518101605380738.jpg"},{"name":"Faded","artist":"Alan Walker","url":"https://sharefs.yun.kugou.com/202009221358/c48c8a37d60981788fbeb179c1a8d205/G052/M04/19/07/FJQEAFZWxMSAbdi-ADPyIZwJRM0272.mp3","cover":"http://imge.kugou.com/stdmusic/150/20151231/20151231230206139997.jpg"},{"name":"Down","artist":"Jason Walker","url":"https://sharefs.yun.kugou.com/202009221358/c3fe4226fd8fb1b17891b10bd51d946b/G211/M09/18/18/s5QEAF5q6BaADvyDADx1iQL-dPA498.mp3","cover":"http://imge.kugou.com/stdmusic/150/20160908/20160908094104633741.jpg"}])
+    });
+});
+</script>
+                    
+
+                    
+                        <link rel="stylesheet" href="/libs/dplayer/DPlayer.min.css">
+<div class="video-player">
+    
+    <div class="title center-align">
+        <i class="fas fa-video-camera"></i>&nbsp;&nbsp;精彩视频
+    </div>
+    
+    <div class="row">
+        <div class="col l8 offset-l2 m10 offset-m1 s12">
+            <div id="dplayer" class="dplayer-video"
+                    ></div>
+        </div>
+    </div>
+</div>
+
+<script src="/libs/dplayer/DPlayer.min.js"></script>
+<script>
+    $(function () {
+        new DPlayer({
+            container: document.getElementById('dplayer'),
+            autoplay: 'false' === 'true',
+            theme: '#42b983',
+            loop: 'false' === 'true',
+            lang: 'zh-CN' === 'zh-CN' ? 'zh-cn' : 'en',
+            preload: 'auto',
+            volume: Number('0.7'),
+            video: {
+                url: 'https://newtorn-blog.oss-cn-beijing.aliyuncs.com/TaylorSwift-Me.mp4',
+                pic: 'https://newtorn-blog.oss-cn-beijing.aliyuncs.com/TaylorSwift-Me.jpg',
+                thumbnails: ''
+            }
         });
     });
 </script>
+                    
+
+                    
+                    <div id="recommend-sections" class="recommend">
+                        
+
+
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    
+
+    <!-- 所有文章卡片 -->
+    <article id="articles" class="container articles">
+        <div class="row article-row">
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="/2020/09/22/hello-world/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            
+                            <span class="card-title">Hello World</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                Open the door of programing world with my real heart!
+Golangpackage main
+
+import "fmt"
+
+func main() {
+    fmt.Println("H
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                Newtorn
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+        </div>
+    </article>
+
+</main>
+
+
 
 
     <footer class="page-footer bg-color">

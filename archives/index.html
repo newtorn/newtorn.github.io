@@ -4,8 +4,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="galleries, Newtorn">
-    <meta name="description" content="galleries | Newtorn">
+    <meta name="keywords" content="归档, Newtorn">
+    <meta name="description" content="归档 | Newtorn">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +13,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>galleries | Newtorn</title>
+    <title>归档 | Newtorn</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -345,330 +345,208 @@
 
 </header>
 
-    <style type="text/css">
-    /* don't remove. */
-    .about-cover {
-        height: 75vh;
-    }
-</style>
+    <div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                累就对了,舒服是给死人的
+                
+            </div>
 
-<style type="text/css">
-    .main-inner{
-        width: 100%;
-    }
-    .main {
-    padding-bottom: 150px;
-    margin-top: 0px;
-    background: #121212;
-    }
-    .main-inner{
-        margin-top: unset;
-    }
-    .page-post-detail .post-meta{
-        display: none;
-    }
-    body {
-        background-image: unset;
-        background-attachment: unset;
-        background-size: 100%;
-        /*background-position: top left;*/
-    }
-    .header{
-        background: rgba(28, 25, 25, 0.6);
-        border-bottom: unset;
-    }
-    .menu .menu-item a{
-            font-weight: 300;
-            color: #e6eaed;
-    }
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['一个致力于开源的男人','A man who is dictated to open source'],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
+            </div>
+        </div>
+    </div>
+</div>
 
-    .imgbox{
-     width: 100%;
-     overflow: hidden;
-     height: 250px;
-     border-right: 1px solid #bcbcbc;
-    }
-    .box{
-        visibility: visible;
-        overflow: auto;
-        zoom: 1;
-    }
-    .box li{
-    float: left;
-    width: 25%;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    list-style: none;
-    margin: 0;
-    /*display: inline;*/
-    padding: 0;
-    height: 360px;
-    }
-    .box li span{
-    display: block;
-    padding: 4% 7% 10% 7%;
-    min-height: 80px;
-    background: #fff;
-    color: #fff;
-    font-size: 16px;
-    background: #121212;
-    font-weight: 600;
-    line-height: 26px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    }
-
-    img.imgitem{
-        padding: unset;
-        padding: unset;
-        border: unset;
-        position: relative;
-        padding: 0px;
-        height: auto;
-        width: 100%;
-    }
-
-
-div#posts.posts-expand {
-    border: unset;
-    padding: unset;
-    margin-bottom: 10px;
-}
-.posts-expand .post-body img{
-    padding: 0px !important;
-}
-.box p{
-    display: block;
-    background: #121212;
-    color: #fff;
-    font-size: 12px;
-    font-family: 'SwisMedium';
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.box span strong{
-    background: rgba(0,0,0,0.4);
-    padding: 20px;
-}
-
-.posts-expand .post-title {
-    display: none;
-}
-.title{
-    display: inline-block;
-    vertical-align: middle;
-    background: url(https://image.idealli.com/bg11.jpg);
-    font: 85px/250px 'ChaletComprimeMilanSixty';
-    background-position: left bottom !important;
-    color: #fff;
-    background-size: 100% auto !important;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    width: 100%;
-    text-align: center;
-    border: unset;
-    height: 700px;
-    cursor: unset !important;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.btn-more-posts{
-    display: inline-block;
-    vertical-align: middle;
-    font: 85px/250px 'ChaletComprimeMilanSixty';
-    color: #000;
-    width: 100%;
-    text-align: center;
-    border: unset;
-    height: 400px;
-    background-color: #121212;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-@media (max-width: 767px){
-    .box li {
-    width: 100%;
-}
-.title {
-    height: 200px;
-}
-
-.box span {
-    min-height: 80px;
-    border-right: unset;
-    font-size: 17px;
-}
-.box p{
-    border-right: unset;
-    font-size: 12px;
-
-}
-.posts-expand {
-    margin: unset;
-}
-    div#comments.comments.v {
-    width: 96%;
-    padding-top: 50px;
-}
-
-
-}
-
-@media (min-width: 1600px){
-    .container .main-inner{
-        width: 100%;
-    }
-}
-
-.footer{
-    background-color: #121212 !important;
-}
-.v * {
-    color: #f4f4f4 !important;
-}
-
-.v .vwrap .vmark .valert .vcode {
-    background: #00050b !important;
-}
-
-</style>
-
-<div id="box" class="box"></div>
-
-
-<script type="text/javascript">
-
-function loadXMLDoc(xmlUrl)
-{
-    try //Internet Explorer
-    {
-        xmlDoc=new ActiveXObject("Microsoft.XMLDOM");
-    }
-    catch(e)
-    {
-      try //Firefox, Mozilla, Opera, etc.
-        {
-          xmlDoc=document.implementation.createDocument("","",null);
-        }
-      catch(e) {alert(e.message)}
-    }
-
-    try
-    {
-          xmlDoc.async=false;
-          xmlDoc.load(xmlUrl);
-    }
-    catch(e) {
-        try //Google Chrome
-          {
-            var chromeXml = new XMLHttpRequest();
-            chromeXml.open("GET", xmlUrl, false);
-            chromeXml.send(null);
-            xmlDoc = chromeXml.responseXML.documentElement;
-            //alert(xmlDoc.childNodes[0].nodeName);
-            //return xmlDoc;
-          }
-          catch(e)
-          {
-              alert(e.message)
-          }
-    }
-    return xmlDoc;
-}
-
-var xmllink = "https://blog-album-1252449298.cos.ap-shanghai.myqcloud.com/";  // 你的访问域名链接
-// 访问域名链接就是我上面提到的那个访问域名xml链接
-
-xmlDoc=loadXMLDoc(xmllink);
-var urls=xmlDoc.getElementsByTagName('Key');
-var date=xmlDoc.getElementsByTagName('LastModified');
-var wid=250;
-var showNum=12; //每个相册一次展示多少照片
-if ((window.innerWidth)>1200) {wid=(window.innerWidth*3)/18;}
-var box=document.getElementById('box');
-var i=0;
-
-var content=new Array();
-var tmp=0;
-var kkk=-1;
-for (var t = 0; t < urls.length ; t++) {
-    var bucket=urls[t].innerHTML;
-    var length=bucket.indexOf('/');
-    if(length===bucket.length-1){
-        kkk++;
-        content[kkk]=new Array();
-        content[kkk][0]={'url':bucket,'date':date[t].innerHTML.substring(0,10)};
-        tmp=1;
-    }
-    else {
-        content[kkk][tmp++]={'url':bucket.substring(length+1),'date':date[t].innerHTML.substring(0,10)};
-    }
-}
-
-for (var i = 0; i < content.length; i++) {
-    var conBox=document.createElement("div");
-    conBox.id='conBox'+i;
-    box.appendChild(conBox);
-    var item=document.createElement("div");
-    var title=content[i][0].url;
-    item.innerHTML="<button class=title style=background:url("+xmllink+'/'+title+"main-panel.jpg"+");><span style=display:inline;><strong style=color:#f0f3f6; >"+title.substring(0,title.length-1)+"</strong></span></button>";
-    conBox.appendChild(item);
-
-    for (var j = 1; j < content[i].length && j < showNum+1; j++) {
-        var con=content[i][j].url;
-        var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src="+xmllink+'/'+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4)+"</span><p>上传于"+content[i][j].date+"</p>";
-        conBox.appendChild(item);
-    }
-    if(content[i].length > showNum){
-        var moreItem=document.createElement("button");
-        moreItem.className="btn-more-posts";
-        moreItem.id="more"+i;
-        moreItem.value=showNum+1;
-        let cur=i;
-        moreItem.onclick= function (){
-            moreClick(this,cur,content[cur],content[cur][0].url);
-        }
-        moreItem.innerHTML="<span style=display:inline;><strong style=color:#f0f3f6;>加载更多</strong></span>";
-        conBox.appendChild(moreItem);
-    }
-}
-
-function moreClick(obj,cur,cont,title){
-    var parent=obj.parentNode;
-    parent.removeChild(obj);
-    var j=obj.value;
-    var begin=j;
-    for ( ; j < cont.length && j < Number(showNum) + Number(begin); j++) {
-        console.log( Number(showNum) + Number(begin));
-        var con=cont[j].url;
-        var item=document.createElement("li");
-        item.innerHTML="<div class=imgbox id=imgbox style=height:"+wid+"px;><img class=imgitem src="+xmllink+'/'+title+con+" alt="+con+"></div><span>"+con.substring(0,con.length-4)+"</span><p>上传于"+cont[j].date+"</p>";
-        parent.appendChild(item);
-    }
-    if(cont.length > j){
-        obj.value=j;
-        parent.appendChild(obj);
-    }
-}
-
-</script>
 
 <script>
-    $(function () {
-        let animateClass = 'animated pulse';
-        $('.imgbox').hover(function () {
-            $(this).addClass(animateClass);
-        }, function () {
-            $(this).removeClass(animateClass);
-        });
-    });
+    // 每天切换 banner 图.  Switch banner image every day.
+    $('.bg-cover').css('background-image', 'url(/medias/banner/' + new Date().getDay() + '.jpg)');
 </script>
+
+
+    </div>
+</div>
+
+<main class="content">
+
+    
+    <div class="container archive-calendar">
+    <div class="card">
+        <div id="post-calendar" class="card-content"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
+<script type="text/javascript">
+    let myChart = echarts.init(document.getElementById('post-calendar'));
+
+    
+
+    let option = {
+        title: {
+            top: 0,
+            text: '文章日历',
+            left: 'center',
+            textStyle: {
+                color: '#3C4858'
+            }
+        },
+        tooltip: {
+            padding: 10,
+            backgroundColor: '#555',
+            borderColor: '#777',
+            borderWidth: 1,
+            formatter: function (obj) {
+                var value = obj.value;
+                return '<div style="font-size: 14px;">' + value[0] + '：' + value[1] + '</div>';
+            }
+        },
+        visualMap: {
+            show: true,
+            showLabel: true,
+            categories: [0, 1, 2, 3, 4],
+            calculable: true,
+            inRange: {
+                symbol: 'rect',
+                color: ['#ebedf0', '#c6e48b', '#7bc96f', '#239a3b', '#196127']
+            },
+            itemWidth: 12,
+            itemHeight: 12,
+            orient: 'horizontal',
+            left: 'center',
+            bottom: 0
+        },
+        calendar: [{
+            left: 'center',
+            range: ["2019-09-22", "2020-09-22"],
+            cellSize: [13, 13],
+            splitLine: {
+                show: false
+            },
+            itemStyle: {
+                color: '#196127',
+                borderColor: '#fff',
+                borderWidth: 2
+            },
+            yearLabel: {
+                show: false
+            },
+            monthLabel: {
+                nameMap: 'cn',
+                fontSize: 11
+            },
+            dayLabel: {
+                formatter: '{start}  1st',
+                nameMap: 'cn',
+                fontSize: 11
+            }
+        }],
+        series: [{
+            type: 'heatmap',
+            coordinateSystem: 'calendar',
+            calendarIndex: 0,
+            data: [["2019-09-22", 0], ["2019-09-23", 0], ["2019-09-24", 0], ["2019-09-25", 0], ["2019-09-26", 0], ["2019-09-27", 0], ["2019-09-28", 0], ["2019-09-29", 0], ["2019-09-30", 0], ["2019-10-01", 0], ["2019-10-02", 0], ["2019-10-03", 0], ["2019-10-04", 0], ["2019-10-05", 0], ["2019-10-06", 0], ["2019-10-07", 0], ["2019-10-08", 0], ["2019-10-09", 0], ["2019-10-10", 0], ["2019-10-11", 0], ["2019-10-12", 0], ["2019-10-13", 0], ["2019-10-14", 0], ["2019-10-15", 0], ["2019-10-16", 0], ["2019-10-17", 0], ["2019-10-18", 0], ["2019-10-19", 0], ["2019-10-20", 0], ["2019-10-21", 0], ["2019-10-22", 0], ["2019-10-23", 0], ["2019-10-24", 0], ["2019-10-25", 0], ["2019-10-26", 0], ["2019-10-27", 0], ["2019-10-28", 0], ["2019-10-29", 0], ["2019-10-30", 0], ["2019-10-31", 0], ["2019-11-01", 0], ["2019-11-02", 0], ["2019-11-03", 0], ["2019-11-04", 0], ["2019-11-05", 0], ["2019-11-06", 0], ["2019-11-07", 0], ["2019-11-08", 0], ["2019-11-09", 0], ["2019-11-10", 0], ["2019-11-11", 0], ["2019-11-12", 0], ["2019-11-13", 0], ["2019-11-14", 0], ["2019-11-15", 0], ["2019-11-16", 0], ["2019-11-17", 0], ["2019-11-18", 0], ["2019-11-19", 0], ["2019-11-20", 0], ["2019-11-21", 0], ["2019-11-22", 0], ["2019-11-23", 0], ["2019-11-24", 0], ["2019-11-25", 0], ["2019-11-26", 0], ["2019-11-27", 0], ["2019-11-28", 0], ["2019-11-29", 0], ["2019-11-30", 0], ["2019-12-01", 0], ["2019-12-02", 0], ["2019-12-03", 0], ["2019-12-04", 0], ["2019-12-05", 0], ["2019-12-06", 0], ["2019-12-07", 0], ["2019-12-08", 0], ["2019-12-09", 0], ["2019-12-10", 0], ["2019-12-11", 0], ["2019-12-12", 0], ["2019-12-13", 0], ["2019-12-14", 0], ["2019-12-15", 0], ["2019-12-16", 0], ["2019-12-17", 0], ["2019-12-18", 0], ["2019-12-19", 0], ["2019-12-20", 0], ["2019-12-21", 0], ["2019-12-22", 0], ["2019-12-23", 0], ["2019-12-24", 0], ["2019-12-25", 0], ["2019-12-26", 0], ["2019-12-27", 0], ["2019-12-28", 0], ["2019-12-29", 0], ["2019-12-30", 0], ["2019-12-31", 0], ["2020-01-01", 0], ["2020-01-02", 0], ["2020-01-03", 0], ["2020-01-04", 0], ["2020-01-05", 0], ["2020-01-06", 0], ["2020-01-07", 0], ["2020-01-08", 0], ["2020-01-09", 0], ["2020-01-10", 0], ["2020-01-11", 0], ["2020-01-12", 0], ["2020-01-13", 0], ["2020-01-14", 0], ["2020-01-15", 0], ["2020-01-16", 0], ["2020-01-17", 0], ["2020-01-18", 0], ["2020-01-19", 0], ["2020-01-20", 0], ["2020-01-21", 0], ["2020-01-22", 0], ["2020-01-23", 0], ["2020-01-24", 0], ["2020-01-25", 0], ["2020-01-26", 0], ["2020-01-27", 0], ["2020-01-28", 0], ["2020-01-29", 0], ["2020-01-30", 0], ["2020-01-31", 0], ["2020-02-01", 0], ["2020-02-02", 0], ["2020-02-03", 0], ["2020-02-04", 0], ["2020-02-05", 0], ["2020-02-06", 0], ["2020-02-07", 0], ["2020-02-08", 0], ["2020-02-09", 0], ["2020-02-10", 0], ["2020-02-11", 0], ["2020-02-12", 0], ["2020-02-13", 0], ["2020-02-14", 0], ["2020-02-15", 0], ["2020-02-16", 0], ["2020-02-17", 0], ["2020-02-18", 0], ["2020-02-19", 0], ["2020-02-20", 0], ["2020-02-21", 0], ["2020-02-22", 0], ["2020-02-23", 0], ["2020-02-24", 0], ["2020-02-25", 0], ["2020-02-26", 0], ["2020-02-27", 0], ["2020-02-28", 0], ["2020-02-29", 0], ["2020-03-01", 0], ["2020-03-02", 0], ["2020-03-03", 0], ["2020-03-04", 0], ["2020-03-05", 0], ["2020-03-06", 0], ["2020-03-07", 0], ["2020-03-08", 0], ["2020-03-09", 0], ["2020-03-10", 0], ["2020-03-11", 0], ["2020-03-12", 0], ["2020-03-13", 0], ["2020-03-14", 0], ["2020-03-15", 0], ["2020-03-16", 0], ["2020-03-17", 0], ["2020-03-18", 0], ["2020-03-19", 0], ["2020-03-20", 0], ["2020-03-21", 0], ["2020-03-22", 0], ["2020-03-23", 0], ["2020-03-24", 0], ["2020-03-25", 0], ["2020-03-26", 0], ["2020-03-27", 0], ["2020-03-28", 0], ["2020-03-29", 0], ["2020-03-30", 0], ["2020-03-31", 0], ["2020-04-01", 0], ["2020-04-02", 0], ["2020-04-03", 0], ["2020-04-04", 0], ["2020-04-05", 0], ["2020-04-06", 0], ["2020-04-07", 0], ["2020-04-08", 0], ["2020-04-09", 0], ["2020-04-10", 0], ["2020-04-11", 0], ["2020-04-12", 0], ["2020-04-13", 0], ["2020-04-14", 0], ["2020-04-15", 0], ["2020-04-16", 0], ["2020-04-17", 0], ["2020-04-18", 0], ["2020-04-19", 0], ["2020-04-20", 0], ["2020-04-21", 0], ["2020-04-22", 0], ["2020-04-23", 0], ["2020-04-24", 0], ["2020-04-25", 0], ["2020-04-26", 0], ["2020-04-27", 0], ["2020-04-28", 0], ["2020-04-29", 0], ["2020-04-30", 0], ["2020-05-01", 0], ["2020-05-02", 0], ["2020-05-03", 0], ["2020-05-04", 0], ["2020-05-05", 0], ["2020-05-06", 0], ["2020-05-07", 0], ["2020-05-08", 0], ["2020-05-09", 0], ["2020-05-10", 0], ["2020-05-11", 0], ["2020-05-12", 0], ["2020-05-13", 0], ["2020-05-14", 0], ["2020-05-15", 0], ["2020-05-16", 0], ["2020-05-17", 0], ["2020-05-18", 0], ["2020-05-19", 0], ["2020-05-20", 0], ["2020-05-21", 0], ["2020-05-22", 0], ["2020-05-23", 0], ["2020-05-24", 0], ["2020-05-25", 0], ["2020-05-26", 0], ["2020-05-27", 0], ["2020-05-28", 0], ["2020-05-29", 0], ["2020-05-30", 0], ["2020-05-31", 0], ["2020-06-01", 0], ["2020-06-02", 0], ["2020-06-03", 0], ["2020-06-04", 0], ["2020-06-05", 0], ["2020-06-06", 0], ["2020-06-07", 0], ["2020-06-08", 0], ["2020-06-09", 0], ["2020-06-10", 0], ["2020-06-11", 0], ["2020-06-12", 0], ["2020-06-13", 0], ["2020-06-14", 0], ["2020-06-15", 0], ["2020-06-16", 0], ["2020-06-17", 0], ["2020-06-18", 0], ["2020-06-19", 0], ["2020-06-20", 0], ["2020-06-21", 0], ["2020-06-22", 0], ["2020-06-23", 0], ["2020-06-24", 0], ["2020-06-25", 0], ["2020-06-26", 0], ["2020-06-27", 0], ["2020-06-28", 0], ["2020-06-29", 0], ["2020-06-30", 0], ["2020-07-01", 0], ["2020-07-02", 0], ["2020-07-03", 0], ["2020-07-04", 0], ["2020-07-05", 0], ["2020-07-06", 0], ["2020-07-07", 0], ["2020-07-08", 0], ["2020-07-09", 0], ["2020-07-10", 0], ["2020-07-11", 0], ["2020-07-12", 0], ["2020-07-13", 0], ["2020-07-14", 0], ["2020-07-15", 0], ["2020-07-16", 0], ["2020-07-17", 0], ["2020-07-18", 0], ["2020-07-19", 0], ["2020-07-20", 0], ["2020-07-21", 0], ["2020-07-22", 0], ["2020-07-23", 0], ["2020-07-24", 0], ["2020-07-25", 0], ["2020-07-26", 0], ["2020-07-27", 0], ["2020-07-28", 0], ["2020-07-29", 0], ["2020-07-30", 0], ["2020-07-31", 0], ["2020-08-01", 0], ["2020-08-02", 0], ["2020-08-03", 0], ["2020-08-04", 0], ["2020-08-05", 0], ["2020-08-06", 0], ["2020-08-07", 0], ["2020-08-08", 0], ["2020-08-09", 0], ["2020-08-10", 0], ["2020-08-11", 0], ["2020-08-12", 0], ["2020-08-13", 0], ["2020-08-14", 0], ["2020-08-15", 0], ["2020-08-16", 0], ["2020-08-17", 0], ["2020-08-18", 0], ["2020-08-19", 0], ["2020-08-20", 0], ["2020-08-21", 0], ["2020-08-22", 0], ["2020-08-23", 0], ["2020-08-24", 0], ["2020-08-25", 0], ["2020-08-26", 0], ["2020-08-27", 0], ["2020-08-28", 0], ["2020-08-29", 0], ["2020-08-30", 0], ["2020-08-31", 0], ["2020-09-01", 0], ["2020-09-02", 0], ["2020-09-03", 0], ["2020-09-04", 0], ["2020-09-05", 0], ["2020-09-06", 0], ["2020-09-07", 0], ["2020-09-08", 0], ["2020-09-09", 0], ["2020-09-10", 0], ["2020-09-11", 0], ["2020-09-12", 0], ["2020-09-13", 0], ["2020-09-14", 0], ["2020-09-15", 0], ["2020-09-16", 0], ["2020-09-17", 0], ["2020-09-18", 0], ["2020-09-19", 0], ["2020-09-20", 0], ["2020-09-21", 0], ["2020-09-22", 1]]
+        }]
+
+    };
+
+    myChart.setOption(option);
+</script>
+    
+
+    
+
+    <div id="cd-timeline" class="container">
+        
+        <div class="cd-timeline-block">
+
+            
+            
+            
+            <div class="cd-timeline-img year" data-aos="zoom-in-up">
+                <a href="/archives/2020">2020</a>
+            </div>
+            
+
+            
+            
+            
+            <div class="cd-timeline-img month" data-aos="zoom-in-up">
+                <a href="/archives/2020/09">09</a>
+            </div>
+            
+
+            
+            <div class="cd-timeline-img day" data-aos="zoom-in-up">
+                <span>22</span>
+            </div>
+            <article class="cd-timeline-content" data-aos="fade-up">
+                <div class="article col s12 m6">
+                    <div class="card">
+                        <a href="/2020/09/22/hello-world/">
+                            <div class="card-image">
+                                
+                                
+                                <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                                
+                                <span class="card-title">Hello World</span>
+                            </div>
+                        </a>
+                        <div class="card-content article-content">
+                            <div class="summary block-with-text">
+                                
+                                    Open the door of programing world with my real heart!
+Golangpackage main
+
+import "fmt"
+
+func main() {
+    fmt.Println("H
+                                
+                            </div>
+                            <div class="publish-info">
+                                <span class="publish-date">
+                                    <i class="far fa-clock fa-fw icon-date"></i>2020-09-22
+                                </span>
+                                <span class="publish-author">
+                                    
+                                    <i class="fas fa-user fa-fw"></i>
+                                    Newtorn
+                                    
+                                </span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </article>
+        </div>
+        
+    </div>
+
+</main>
+
+
 
 
     <footer class="page-footer bg-color">

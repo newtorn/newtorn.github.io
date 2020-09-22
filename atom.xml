@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Newtorn</title>
+  
+  <subtitle>累就对了,舒服是给死人的</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://newtorn.gitee.io/"/>
+  <updated>2020-09-22T07:14:07.358Z</updated>
+  <id>https://newtorn.gitee.io/</id>
+  
+  <author>
+    <name>Newtorn</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://newtorn.gitee.io/2020/09/22/hello-world/"/>
+    <id>https://newtorn.gitee.io/2020/09/22/hello-world/</id>
+    <published>2020-09-22T07:14:07.358Z</published>
+    <updated>2020-09-22T07:14:07.358Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;Open the door of programing world with my real heart!&lt;/p&gt;
+&lt;h3 id=&quot;Golang&quot;&gt;&lt;a href=&quot;#Golang&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+</feed>
