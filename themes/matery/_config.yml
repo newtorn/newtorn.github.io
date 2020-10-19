@@ -288,7 +288,7 @@ gitment:
 # the Giteement config，default disabled
 # Giteement 评论模块的配置，默认为不激活
 giteement:
-  enable: true
+  enable: false
   remote: false
   giteeID: newtorn
   repo: newtorn
