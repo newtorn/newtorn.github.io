@@ -67,7 +67,7 @@ dream:
   enable: true
   showTitle: true
   title: 我的梦想
-  text: ByteDance, Google, Apple, Amazon, Alibaba, Netease, Tencent, JD, 英伟达，SuNing, Microsoft, Sony, etc.
+  text: Want to be a cto.
 
 # Whether to display the musics.
 # 是否在首页显示音乐.
@@ -91,8 +91,8 @@ video:
   enable: true
   showTitle: true
   title: 精彩视频
-  url: http://47.100.243.137/download/TaylorSwift-Me.mp4
-  pic: http://47.100.243.137/download/TaylorSwift-Me.jpg
+  url: http://fs.mv.web.kugou.com/202010191537/366d8709253cdbedd1ccda0933e866cd/G160/M0A/01/19/gJQEAFzCgHuAQ33EBDik5Hg6Y4E286.mp4
+  pic: http://imge.kugou.com/mvhdpic/400/20190426/20190426115945942302.jpg
   thumbnails:
   height: # 如：400
   autoplay: false # 是否自动播放
