@@ -488,7 +488,7 @@ The package implements formatted I/O functions. We have already used the package
 
 Another useful package in Go is the json package. This helps to encode/decode the JSON. Let’s take an example to encode/decode some json:
 
-- **Encode**
+### Encode
 ```go
 package main
 
@@ -503,7 +503,7 @@ func main(){
   fmt.Println(string(mapB))
 }
 ```
-- **Decode**
+### Decode
 ```go
 package main
 
