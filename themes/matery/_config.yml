@@ -72,7 +72,7 @@ dream:
 # Whether to display the musics.
 # 是否在首页显示音乐.
 music:
-  enable: true
+  enable: false
   showTitle: true
   title: 倾听音乐
   fixed: false # 开启吸底模式
@@ -88,7 +88,7 @@ music:
 # Whether to display the videos.
 # 是否在首页显示视频.
 video:
-  enable: true
+  enable: false
   showTitle: true
   title: 精彩视频
   url: http://sp.sycdn.kuwo.cn/2512b86f6a410a3af8f48e08ecc2e547/5f8d4bd4/resource/m2/69/63/2892157712.mp4
