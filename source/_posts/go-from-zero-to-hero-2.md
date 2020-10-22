@@ -2,6 +2,11 @@
 title: go from zero to hero(2)
 date: 2020-10-22 16:41:42
 tags:
+- go
+- golang
+categories:
+- golang从零大神
+- go from zero to hero
 ---
 
 ### Getting Started
