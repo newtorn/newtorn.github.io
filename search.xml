@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>go from zero to hero(1)</title>
+      <link href="/2020/10/22/go-from-zero-to-hero-1/"/>
+      <url>/2020/10/22/go-from-zero-to-hero-1/</url>
+      
+        <content type="html"><![CDATA[<p>Golang: simplicity is complicated!</p><blockquote><p>Let’s start with a small introduction to Go (or Golang). Go was designed by Google engineers Robert Griesemer, Rob Pike, and Ken Thompson. It is a statically typed, compiled language. The first version was released as open source in March 2012.</p></blockquote><blockquote><p>“Go is an open source programming language that makes it easy to build simple, reliable, and efficient software”. — GoLang</p></blockquote><p>Next, I take you to learn golang from zero to hero!</p><h3 id="Installation"><a href="#Installation" class="headerlink" title="Installation"></a>Installation</h3><p>From package manager</p><pre class=" language-shell"><code class="language-shell"># Linux(Redhat/CentOS)yum install go# macOSbrew install go# Windowsscoop install go</code></pre><p>From binary package</p><pre><code>download golang installer from `https://golang.org/dl/`</code></pre><h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><p>Create a file named which you like, example: <code>main.go</code>, edit it:</p><pre class=" language-go"><code class="language-go"><span class="token keyword">package</span> main<span class="token keyword">import</span> <span class="token string">"fmt"</span><span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token string">"Hello, World!"</span><span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre><h3 id="Run"><a href="#Run" class="headerlink" title="Run"></a>Run</h3><pre class=" language-shell"><code class="language-shell">go run main.go</code></pre><p>Congratulations!<br>Under command line you will see this:</p><pre><code>Hello World</code></pre><script>        document.querySelectorAll('.github-emoji')          .forEach(el => {            if (!el.dataset.src) { return; }            const img = document.createElement('img');            img.style = 'display:none !important;';            img.src = el.dataset.src;            img.addEventListener('error', () => {              img.remove();              el.style.color = 'inherit';              el.style.backgroundImage = 'none';              el.style.background = 'none';            });            img.addEventListener('load', () => {              img.remove();            });            document.body.appendChild(img);          });      </script>]]></content>
+      
+      
+      <categories>
+          
+          <category> golang从零大神 </category>
+          
+          <category> go from zero to hero </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> go </tag>
+            
+            <tag> golang </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2020/09/22/hello-world/"/>
       <url>/2020/09/22/hello-world/</url>
