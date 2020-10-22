@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://newtorn.gitee.io/"/>
-  <updated>2020-10-22T09:02:09.323Z</updated>
+  <updated>2020-10-22T09:03:16.764Z</updated>
   <id>https://newtorn.gitee.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://newtorn.gitee.io/2020/10/22/go-from-zero-to-hero-2/"/>
     <id>https://newtorn.gitee.io/2020/10/22/go-from-zero-to-hero-2/</id>
     <published>2020-10-22T08:41:42.000Z</published>
-    <updated>2020-10-22T09:02:09.323Z</updated>
+    <updated>2020-10-22T09:03:16.764Z</updated>
     
     <summary type="html">
     
@@ -36,6 +36,14 @@
     </summary>
     
     
+      <category term="golang从零大神" scheme="https://newtorn.gitee.io/categories/golang%E4%BB%8E%E9%9B%B6%E5%A4%A7%E7%A5%9E/"/>
+    
+      <category term="go from zero to hero" scheme="https://newtorn.gitee.io/categories/golang%E4%BB%8E%E9%9B%B6%E5%A4%A7%E7%A5%9E/go-from-zero-to-hero/"/>
+    
+    
+      <category term="go" scheme="https://newtorn.gitee.io/tags/go/"/>
+    
+      <category term="golang" scheme="https://newtorn.gitee.io/tags/golang/"/>
     
   </entry>
   
