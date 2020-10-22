@@ -847,34 +847,38 @@ cd person</code></pre>
 <p>The package implements formatted I/O functions. We have already used the package for printing out to stdout.</p>
 <p><strong>json</strong></p>
 <p>Another useful package in Go is the json package. This helps to encode/decode the JSON. Let’s take an example to encode/decode some json:</p>
-<ul>
-<li><strong>Encode</strong><pre class=" language-go"><code class="language-go"><span class="token keyword">package</span> main
-</code></pre>
-</li>
-</ul>
-<p>import (<br>  “fmt”<br>  “encoding/json”<br>)</p>
-<p>func main(){<br>  mapA := map[string]int{“apple”: 5, “lettuce”: 7}<br>  mapB, _ := json.Marshal(mapA)<br>  fmt.Println(string(mapB))<br>}</p>
-<pre><code>- **Decode**
-```go
-package main
+<h3 id="Encode"><a href="#Encode" class="headerlink" title="Encode"></a>Encode</h3><pre class=" language-go"><code class="language-go"><span class="token keyword">package</span> main
 
-import (
-  "fmt"
-  "encoding/json"
-)
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+  <span class="token string">"fmt"</span>
+  <span class="token string">"encoding/json"</span>
+<span class="token punctuation">)</span>
 
-type response struct {
-  PageNumber int `json:"page"`
-  Fruits []string `json:"fruits"`
-}
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  mapA <span class="token operator">:=</span> <span class="token keyword">map</span><span class="token punctuation">[</span><span class="token builtin">string</span><span class="token punctuation">]</span><span class="token builtin">int</span><span class="token punctuation">{</span><span class="token string">"apple"</span><span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token string">"lettuce"</span><span class="token punctuation">:</span> <span class="token number">7</span><span class="token punctuation">}</span>
+  mapB<span class="token punctuation">,</span> <span class="token boolean">_</span> <span class="token operator">:=</span> json<span class="token punctuation">.</span><span class="token function">Marshal</span><span class="token punctuation">(</span>mapA<span class="token punctuation">)</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span><span class="token function">string</span><span class="token punctuation">(</span>mapB<span class="token punctuation">)</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre>
+<h3 id="Decode"><a href="#Decode" class="headerlink" title="Decode"></a>Decode</h3><pre class=" language-go"><code class="language-go"><span class="token keyword">package</span> main
 
-func main(){
-  str := `{"page": 1, "fruits": ["apple", "peach"]}`
-  res := response{}
-  json.Unmarshal([]byte(str), &amp;res)
-  fmt.Println(res.PageNumber)
-}
-//=&gt; 1</code></pre><p>While decoding the json byte using unmarshal, the first argument is the json byte and the second argument is the address of the response type struct where we want the json to be mapped to. Note that the json:”page” maps page key to PageNumber key in the struct.</p>
+<span class="token keyword">import</span> <span class="token punctuation">(</span>
+  <span class="token string">"fmt"</span>
+  <span class="token string">"encoding/json"</span>
+<span class="token punctuation">)</span>
+
+<span class="token keyword">type</span> response <span class="token keyword">struct</span> <span class="token punctuation">{</span>
+  PageNumber <span class="token builtin">int</span> <span class="token string">`json:"page"`</span>
+  Fruits <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token builtin">string</span> <span class="token string">`json:"fruits"`</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">func</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  str <span class="token operator">:=</span> <span class="token string">`{"page": 1, "fruits": ["apple", "peach"]}`</span>
+  res <span class="token operator">:=</span> response<span class="token punctuation">{</span><span class="token punctuation">}</span>
+  json<span class="token punctuation">.</span><span class="token function">Unmarshal</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token function">byte</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">,</span> <span class="token operator">&amp;</span>res<span class="token punctuation">)</span>
+  fmt<span class="token punctuation">.</span><span class="token function">Println</span><span class="token punctuation">(</span>res<span class="token punctuation">.</span>PageNumber<span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token comment" spellcheck="true">//=> 1</span></code></pre>
+<p>While decoding the json byte using unmarshal, the first argument is the json byte and the second argument is the address of the response type struct where we want the json to be mapped to. Note that the json:”page” maps page key to PageNumber key in the struct.</p>
 <h3 id="Error-Handling"><a href="#Error-Handling" class="headerlink" title="Error Handling"></a>Error Handling</h3><p>Errors are the undesired and unexpected result of a program. Let’s say we are making an API call to an external service. This API call may be successful or could fail. An error in a Go program can be recognized when an error type is present. Let’s see the example:</p>
 <pre class=" language-go"><code class="language-go">resp<span class="token punctuation">,</span> err <span class="token operator">:=</span> http<span class="token punctuation">.</span><span class="token function">Get</span><span class="token punctuation">(</span><span class="token string">"http://example.com/"</span><span class="token punctuation">)</span></code></pre>
 <p>Here the API call to the error object may pass or could fail. We can check if the error is nil or present and handle the response accordingly:</p>
