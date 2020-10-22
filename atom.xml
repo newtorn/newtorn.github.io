@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://newtorn.gitee.io/"/>
-  <updated>2020-10-22T08:28:58.326Z</updated>
+  <updated>2020-10-22T09:02:09.323Z</updated>
   <id>https://newtorn.gitee.io/</id>
   
   <author>
@@ -17,11 +17,34 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>go from zero to hero(2)</title>
+    <link href="https://newtorn.gitee.io/2020/10/22/go-from-zero-to-hero-2/"/>
+    <id>https://newtorn.gitee.io/2020/10/22/go-from-zero-to-hero-2/</id>
+    <published>2020-10-22T08:41:42.000Z</published>
+    <updated>2020-10-22T09:02:09.323Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;Getting-Started&quot;&gt;&lt;a href=&quot;#Getting-Started&quot; class=&quot;headerlink&quot; title=&quot;Getting Started&quot;&gt;&lt;/a&gt;Getting Started&lt;/h3&gt;&lt;p&gt;Go is made of
+        
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>go from zero to hero(1)</title>
     <link href="https://newtorn.gitee.io/2020/10/22/go-from-zero-to-hero-1/"/>
     <id>https://newtorn.gitee.io/2020/10/22/go-from-zero-to-hero-1/</id>
     <published>2020-10-22T08:00:43.000Z</published>
-    <updated>2020-10-22T08:28:58.326Z</updated>
+    <updated>2020-10-22T08:41:53.044Z</updated>
     
     <summary type="html">
     
