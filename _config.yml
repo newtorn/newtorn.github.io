@@ -155,8 +155,10 @@ live2d:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://gitee.com/newtorn/newtorn.git
-  branch: master
+  repo: 
+    gitee: https://gitee.com/newtorn/newtorn.git
+    github: https://github.com/newtorn/newtorn.github.io.git
+  branch: origin
 
 
 # Backup Blog Source Code
