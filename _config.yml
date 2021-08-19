@@ -167,5 +167,6 @@ backup:
   repository:
     github: git@gitee.com:newtorn/newtorn.git,hexo
     gitee: git@gitee.com:newtorn/newtorn.git,hexo
+  branch: hexo
 
 
