@@ -156,8 +156,8 @@ live2d:
 deploy:
   type: git
   repo: 
-    gitee: https://gitee.com/newtorn/newtorn.git
     github: https://github.com/newtorn/newtorn.github.io.git
+    gitee: https://gitee.com/newtorn/newtorn.git
   branch: origin
 
 
@@ -165,7 +165,7 @@ deploy:
 backup:
   type: git
   repository:
-    github: git@gitee.com:newtorn/newtorn.git,hexo
+    github: git@gitee.com:newtorn/newtorn.github.io.git,hexo
     gitee: git@gitee.com:newtorn/newtorn.git,hexo
   branch: hexo
 
