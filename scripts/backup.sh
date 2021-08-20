@@ -11,5 +11,6 @@ git add .
 git commit -m "backup"
 
 for repo in github gitee; do
+
     git push $branch $repo --force
 done
