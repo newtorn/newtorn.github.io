@@ -167,5 +167,3 @@ backup:
   repository:
     github: git@gitee.com:newtorn/newtorn.github.io.git,backup
     gitee: git@gitee.com:newtorn/newtorn.git,backup
-
-

@@ -15,6 +15,7 @@
     "giteement": "https://gitee.com/zhousiwei/giteement.git",
     "hexo": "^5.4.0",
     "hexo-deployer-git": "^2.1.0",
+    "hexo-deployer-shell": "^0.2.3",
     "hexo-filter-github-emojis": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
