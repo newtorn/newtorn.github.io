@@ -10,7 +10,5 @@ git checkout $branch
 git add .
 git commit -m "backup"
 
-for repo in github gitee; do
-
-    git push $branch `{{repo}}` --force
-done
+git push $branch $github --force
+git push $branch $gitee --force
