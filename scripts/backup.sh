@@ -6,10 +6,10 @@ gitee=git@gitee.com:newtorn/newtorn.git
 
 set -ue
 
-git checkout hexo
+git checkout $branch
 git add .
 git commit -m "backup"
 
 for repo in github gitee; do
-    git push origin $repo
+    git push $branch $repo
 done
