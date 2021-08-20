@@ -10,5 +10,5 @@ git checkout $branch
 git add .
 git commit -m "backup"
 
-git push $github --force
+echo "git push $github --force"
 git push $gitee --force
